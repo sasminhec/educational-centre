@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Register — Sasmin HEC</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script type="module" src="register.js"></script>
+</head>
+<body>
+  <main class="container">
+    <div class="card">
+      <h2>Student Registration</h2>
+      <form id="regForm">
+        <label>Email</label>
+        <input id="email" type="email" required />
+        <label>Password</label>
+        <input id="password" type="password" minlength="6" required />
+        <label>Full Name</label>
+        <input id="name" type="text" required />
+        <button type="submit">Register</button>
+      </form>
+      <small class="help">After registering, your account will be pending admin approval.</small>
+      <p><a href="login.html">Already have an account? Login</a></p>
+    </div>
+  </main>
+</body>
+</html>

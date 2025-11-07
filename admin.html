@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Admin — Sasmin HEC</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script type="module" src="admin.js"></script>
+</head>
+<body>
+  <main class="container">
+    <div class="card">
+      <h2>Admin Approval</h2>
+      <p>Admin Email: <strong>sasminhec@gmail.com</strong></p>
+      <form id="adminLoginForm">
+        <label>Email</label>
+        <input id="adminEmail" type="email" required value="sasminhec@gmail.com" />
+        <label>Password</label>
+        <input id="adminPassword" type="password" required />
+        <button type="submit">Sign in as Admin</button>
+      </form>
+
+      <div id="requestsArea" style="display:none;margin-top:18px">
+        <h3>Pending Registrations</h3>
+        <ul id="requestsList"></ul>
+      </div>
+
+      <div id="adminActions" style="display:none;margin-top:18px">
+        <h3>Add Content</h3>
+        <label>Type</label>
+        <select id="contentType">
+          <option value="live">Live</option>
+          <option value="video">Video</option>
+          <option value="tute">Tute</option>
+        </select>
+        <input id="contentTitle" placeholder="Title" />
+        <input id="contentUrl" placeholder="Link or file URL" />
+        <button id="addContent">Add</button>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
