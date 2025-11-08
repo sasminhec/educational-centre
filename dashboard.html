@@ -7,8 +7,14 @@
   <link rel="stylesheet" href="styles.css" />
   <script type="module" src="dashboard.js"></script>
 </head>
-<body>
-  <main class="container">
+<body><div id="header-placeholder"></div>
+<script>
+  fetch("header.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("header-placeholder").innerHTML = data;
+    });
+</script>  <main class="container">
     <div class="card">
       <h2 id="welcome">Dashboard</h2>
       <p><button id="logout">Logout</button></p>
