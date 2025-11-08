@@ -179,3 +179,25 @@ footer {
   transform: translateY(-3px);
   box-shadow: 0 8px 25px rgba(0, 74, 173, 0.5);
 }
+/* ==============================
+   Logo Styling (Top Right Corner)
+   ============================== */
+
+#site-logo {
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  z-index: 1000;
+}
+
+#site-logo img {
+  height: 50px;
+  width: auto;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+#site-logo img:hover {
+  transform: scale(1.05);
+}
