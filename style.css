@@ -159,4 +159,23 @@ footer {
   justify-content: center;
   gap: 15px;
   margin-top: 20px;
+}/* --- Fancy Button Design --- */
+.btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #004aad, #007bff);
+  color: white;
+  text-decoration: none;
+  padding: 14px 35px;
+  border-radius: 12px;
+  margin: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 15px rgba(0, 74, 173, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 74, 173, 0.5);
 }
