@@ -69,20 +69,23 @@ nav a:hover {
 }
 
 #enroll-btn {
-  background-color: #ff3b3b;
+  display: inline-block;
+  background: linear-gradient(135deg, #004aad, #007bff);
   color: white;
-  border: none;
-  padding: 12px 25px;
-  border-radius: 6px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: 0.3s;
+  text-decoration: none;
+  padding: 14px 35px;
+  border-radius: 12px;
+  margin: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 15px rgba(0, 74, 173, 0.3);
+  transition: all 0.3s ease;
 }
-
 #enroll-btn:hover {
-  background-color: #c82121;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 74, 173, 0.5);
 }
-
 /* ================================
    About Section
 =================================*/
