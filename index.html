@@ -58,7 +58,42 @@
   </style>
 </head>
 <body>
-  <h1>Sasmin Higher Educational Centre</h1>
+  <body>
+
+<!-- Welcome Overlay -->
+<div id="welcome" style="
+  position:fixed; inset:0; display:none; align-items:center; justify-content:center;
+  background:rgba(15,23,42,.96); color:#fff; z-index:9999;">
+  <div style="max-width:520px; background:#111827; padding:24px; border-radius:16px; box-shadow:0 10px 30px rgba(0,0,0,.4); text-align:center;">
+    <h1 style="margin:0 0 8px;">Welcome to Sasmin HEC</h1>
+    <p style="margin:0 0 20px; opacity:.9">Live classes, recorded videos, tutes & papers.</p>
+    <button id="welcome-continue" style="
+      padding:10px 18px; border:0; border-radius:10px; background:#3b82f6; color:#fff; font-weight:600; cursor:pointer;">
+      Continue
+    </button>
+  </div>
+</div>
+
+<script>
+  (function () {
+    try {
+      const KEY = 'sasminhec_seen_welcome_v1';
+      if (!localStorage.getItem(KEY)) {
+        const w = document.getElementById('welcome');
+        w.style.display = 'flex';
+        document.getElementById('welcome-continue').addEventListener('click', () => {
+          localStorage.setItem(KEY, '1');
+          w.style.opacity = '1';
+          w.style.transition = 'opacity .4s';
+          requestAnimationFrame(() => { w.style.opacity = '0'; });
+          setTimeout(() => w.remove(), 400);
+        });
+      }
+    } catch (e) {
+      // if storage blocked, just don’t show again this session
+    }
+  })();
+</script>  <h1>Sasmin Higher Educational Centre</h1>
   <p>Student Portal — Live Classes, Recorded Videos, Tutes & Papers</p>
 
   <div class="button-container">
