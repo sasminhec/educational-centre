@@ -57,8 +57,14 @@
     }
   </style>
 </head>
-<body>
-  <!-- Logo (top-right corner) -->
+<body><div id="header-placeholder"></div>
+<script>
+  fetch("header.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("header-placeholder").innerHTML = data;
+    });
+</script>  <!-- Logo (top-right corner) -->
 <div id="site-logo">
   <img src="assests/logo.jpg" alt="Sasmin HEC Logo">
 </div>  
