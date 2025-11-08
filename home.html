@@ -1,55 +1,72 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Welcome | Sasmin HEC</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sasmin HEC – Student Portal</title>
+  <link rel="stylesheet" href="styles.css">
   <style>
     body {
-      background: linear-gradient(120deg, #004aad, #00b4d8);
-      color: white;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-      text-align: center;
+      background: #f5f7fb;
       font-family: 'Poppins', sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
     }
 
     h1 {
-      font-size: 36px;
-      margin-bottom: 10px;
+      margin-top: 50px;
+      color: #004aad;
     }
 
     p {
-      font-size: 18px;
-      margin-bottom: 30px;
+      color: #333;
     }
 
-    .start-btn {
-      background: white;
-      color: #004aad;
-      padding: 14px 40px;
-      border: none;
-      border-radius: 50px;
+    .button-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: linear-gradient(135deg, #004aad, #007bff);
+      color: white;
+      text-decoration: none;
+      padding: 14px 35px;
+      border-radius: 12px;
       font-size: 18px;
       font-weight: 600;
-      cursor: pointer;
+      letter-spacing: 0.5px;
+      box-shadow: 0 4px 15px rgba(0, 74, 173, 0.3);
       transition: all 0.3s ease;
     }
 
-    .start-btn:hover {
-      transform: scale(1.08);
-      background: #f0f0f0;
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(0, 74, 173, 0.5);
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 14px;
+      color: #555;
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to Sasmin Higher Educational Centre</h1>
-  <p>Join our live classes, watch recordings, and access learning materials easily.</p>
-  <button class="start-btn" onclick="location.href='index.html'">Enter Portal</button>
+  <h1>Sasmin Higher Educational Centre</h1>
+  <p>Student Portal — Live Classes, Recorded Videos, Tutes & Papers</p>
+
+  <div class="button-container">
+    <a href="register.html" class="btn">Register</a>
+    <a href="login.html" class="btn">Login</a>
+    <a href="admin.html" class="btn">Admin</a>
+  </div>
+
+  <footer>© Sasmin HEC</footer>
 </body>
 </html>
