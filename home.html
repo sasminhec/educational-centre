@@ -57,8 +57,14 @@
     }
   </style>
 </head>
-<body>
-  <h1>Sasmin Higher Educational Centre</h1>
+<body><div id="header-placeholder"></div>
+<script>
+  fetch("header.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("header-placeholder").innerHTML = data;
+    });
+</script>  <h1>Sasmin Higher Educational Centre</h1>
   <p>Student Portal — Live Classes, Recorded Videos, Tutes & Papers</p>
 
   <div class="button-container">
